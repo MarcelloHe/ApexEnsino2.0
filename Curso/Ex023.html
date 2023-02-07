@@ -1,0 +1,37 @@
+<!-- 2) Solicite ao usuário diversos nomes,
+depois escreve na tela quantos nomes foram informados e a lista de nomes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var nomes = []
+
+    while (true) {
+        var nome = prompt(
+            'Informe um nome: (" s " para sair) '
+        ).toUpperCase();
+
+        if (nome == "S") {
+            break;
+        } else {
+            nomes.push(nome);
+        }
+    }
+    document.write("A quantidade de nomes foram: " + nomes.length + "<br>")
+    document.write("Os nomes foram: " + nomes)
+
+
+</script>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    const CANDIDATO1 = "Sofia"
+    const CANDIDATO2 = "Marcello"
+    const CANDIDATO3 = "Leonardo"
+    const CANDIDATO4 = "Rafael"
+    const NULO = "Nulos"
+
+    let lista_candidatos = []
+    lista_candidatos[0] = CANDIDATO1
+    lista_candidatos[1] = CANDIDATO2
+    lista_candidatos[2] = CANDIDATO3
+    lista_candidatos[3] = CANDIDATO4
+    lista_candidatos[4] = NULO
+
+    let voto_eleitor = ""
+    let votos_computados = []
+    votos_computados[0] = 0     // CANDIDATO1
+    votos_computados[1] = 0     // CANDIDATO2
+    votos_computados[2] = 0     // CANDIDATO3
+    votos_computados[3] = 0     // CANDIDATO4
+    votos_computados[4] = 0     // Nulos
+
+    let continua = true
+    while(continua){
+        voto_eleitor = prompt("Informe seu voto: \n 1 "+CANDIDATO1+" \n 2 "+CANDIDATO2+" \n 3 "+CANDIDATO3+" \n 4 "+CANDIDATO4+" \n 5 Sair")
+
+        continua = (voto_eleitor != "5")
+
+        switch(voto_eleitor){
+
+            case "1":
+                votos_computados[0]++
+                break;
+
+            case "2":
+                votos_computados[1]++
+                break;
+
+            case "3":
+                votos_computados[2]++
+                break;
+
+            case "4":
+                votos_computados[3]++
+                break;
+
+            case "5":
+                break;
+
+            default:
+                votos_computados[4]++
+        }
+    }
+
+    document.write("Lista de votos: <br>")
+    for (let index = 0; index < votos_computados.length; index++) {
+        document.write(votos_computados[index]+" "+lista_candidatos[index]+"<br>")
+    }
+
+</script>
+</html>

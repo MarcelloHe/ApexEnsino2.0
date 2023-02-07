@@ -1,0 +1,41 @@
+<!-- 7. Faça um script que peça os 3 lados de um triângulo. O script deverá informar se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
+
+    Dicas:
+    Três lados formam um triângulo quando a soma de quaisquer dois lados for maior que o terceiro;
+    Triângulo Equilátero: três lados iguais;
+    Triângulo Isósceles: quaisquer dois lados iguais;
+    Triângulo Escaleno: três lados diferentes; -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var lado1 = parseFloat(prompt("Primeiro lado"))
+    var lado2 = parseFloat(prompt("Segundo lado"))
+    var lado3 = parseFloat(prompt("Terceiro lado"))
+
+    if (lado1 + lado2 < lado3 || lado2 + lado3 < lado1 || lado1 + lado3 < lado2) {
+        document.write("Os valores não podem ser um triângulo")
+    } else if (lado1 == lado2 && lado2 == lado3) {
+        document.write("Os valores podem ser um triângulo equilátero")
+    } else if (lado1 == lado2 || lado2 == lado3 || lado3 == lado1) {
+        document.write("Os valores podem ser um triângulo isósceles")
+    } else if (lado1 != lado2 || lado2 != lado3) {
+        document.write("Os valores podem ser um triângulo escaleno")
+    } else {
+        document.write("Os valores podem ser um triângulo")
+    }
+
+</script>
+
+</html>

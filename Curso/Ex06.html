@@ -1,0 +1,34 @@
+<!-- 6) Peça três notas, retorne a média obtida e a situação (7 ou mais aprovado, caso contrário reprovado).
+Estrutura do cálculo: (nota1 + nota2 + nota3) / 3 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var nota1 = parseFloat(prompt("Digite a primeira nota"))
+    var nota2 = parseFloat(prompt("Digite a segunda nota"))
+    var nota3 = parseFloat(prompt("Digite a terceira nota"))
+
+    var media = (nota1 + nota2 + nota3) / 3
+
+
+    if (media >= 7) {
+        document.write("APROVADO")
+    } else {
+        document.write("REPROVADO")
+    }
+</script>
+
+</html>

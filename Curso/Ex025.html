@@ -1,0 +1,43 @@
+<!-- 4) Utilize o código do exercício número 2 e adicione a seguinte funcionalidade,
+se o usuário escrever um nome repetido na lista, o programa deverá terminar a execução
+e apresente os resultados esperados no exercício 2. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var nomes = []
+
+    while (true) {
+        var nome = prompt(
+            'Informe um nome: (" s " para sair) '
+        ).toUpperCase();
+
+        if (nome == "S" || nomes.includes(nome)) {
+            break;
+        } else {
+            nomes.push(nome);
+        }
+
+
+    }
+
+    document.write("A quantidade de nomes foram: " + nomes.length + "<br>")
+    document.write("Os nomes foram: " + nomes)
+
+
+
+
+</script>
+
+</html>

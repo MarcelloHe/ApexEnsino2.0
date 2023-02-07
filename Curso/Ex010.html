@@ -1,0 +1,32 @@
+<!-- 4. Faça um script que pede dois inteiros e armazene eles em duas variáveis. Em seguida, troque o valor das variáveis, invertendo e exibindo o antes
+     e o depois em uma janela de alert. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var num1 = parseInt(prompt("Digite um número:"))
+    var num2 = parseInt(prompt("Digite outro número"))
+
+    alert(" Antes " + num1 + " e " + num2)
+
+    aux = num1
+    num1 = num2
+    num2 = aux
+
+    alert("Depois " + num1 + " e " + num2)
+
+
+</script>
+
+</html>
