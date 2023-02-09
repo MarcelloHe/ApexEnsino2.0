@@ -1,0 +1,50 @@
+<!-- Faça um programa JavaScript em que o usuário informará sua altura e peso e o programa calculará o seu IMC. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick=imc()>
+        <h1>Calcular IMC !</h1>
+    </button>
+
+</body>
+<script>
+    function imc() {
+
+        let altura = parseFloat(prompt("Digite sua altura:\nExemplo 1.70 "))
+        let peso = parseFloat(prompt("Digite seu peso:\nExemplo 70Kgs "))
+        resultado = peso / (altura * altura)
+        document.write("Seu IMC é :" + resultado.toFixed(0))
+
+        if (resultado < 18.5) {
+            document.write(" ABAIXO DO PESO")
+        }
+        else if (resultado >= 18.5 && resultado < 25) {
+            document.write(" PESO NORMAL")
+        }
+        else if (resultado >= 25 && resultado < 30) {
+            document.write(" SOBREPESO")
+        }
+        else if (resultado >= 30 && resultado < 40) {
+            document.write(" OBESIDADE")
+        }
+        else {
+            document.write(" OBESIDADE GRAVE")
+        }
+    }
+
+
+
+
+</script>
+
+</html>

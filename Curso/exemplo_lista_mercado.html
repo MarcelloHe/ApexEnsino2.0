@@ -1,9 +1,3 @@
-<!-- ------- Matrizes
-
-6) Criar um sistema CRUD, onde seja possível
-manipular os dados:
-Nome do produto, marca e valor. -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +11,14 @@ Nome do produto, marca e valor. -->
 <body>
 
 </body>
+
 <script>
+
+    // 6) Criar um sistema CRUD, onde seja possível
+    // manipular os dados:
+    // Nome do produto, marca e valor.
+
+
     let lista_mercado = []
     let continua = true
     let produto, marca, valor = ""
@@ -34,15 +35,13 @@ Nome do produto, marca e valor. -->
     }
 
     for (let j = 0; j < lista_mercado.length; j++) {
-        for (let i = 0; i < lista_mercado[j].length; i++) {
-            document.write(lista_mercado[j][i])
-            // document.write("Nome: Arroz Preço: 10 Marca: Tio João ")
-        }
+        // for (let i = 0; i < lista_mercado[j].length; i++) {
+        //     document.write(lista_mercado[j][i])
+        //     // document.write("Nome: Arroz Preço: 10 Marca: Tio João ")
+        // }
+        document.write(lista_mercado[j])
         document.write("<br>")
     }
-
-
-
 
 
 </script>

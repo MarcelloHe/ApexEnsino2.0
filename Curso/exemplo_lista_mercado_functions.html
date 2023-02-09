@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button onclick=cria_lista_mercado()>
+        <h1>ME CLIQUE !</h1>
+    </button>
+
+
+</body>
+
+<script>
+
+// 6) Criar um sistema CRUD, onde seja possível
+// manipular os dados:
+// Nome do produto, marca e valor.
+
+function solicita_valores(texto) {
+    let resposta_user = prompt("Informe  "+texto+" do produto")
+
+    return resposta_user
+}
+
+function add_variaveis_no_array(array, produto, marca, valor){
+
+    array.push(["Produto: "+produto, " - Marca: "+marca," - Valor: "+valor])
+
+}
+
+function deve_continuar(){
+    return ("s" == prompt("digite S para adicionar outro produto.").toLowerCase())
+}
+
+function imprime_lista_mercado(array){
+
+    for (let j = 0; j < array.length; j++) {
+        for (let i = 0; i < array[j].length; i++) {
+            document.write(array[j][i])
+            // document.write("Nome: Arroz Preço: 10 Marca: Tio João ")
+        }
+        document.write("<br>")
+    }
+}
+
+function cria_lista_mercado(){
+
+    let lista_mercado = []
+    let continua = true
+    let produto, marca, valor = ""
+
+    while(continua){
+
+        produto = solicita_valores("o nome")
+        marca = solicita_valores("a marca")
+        valor = solicita_valores("o valor")
+
+        add_variaveis_no_array(array=lista_mercado,produto=produto,marca=marca,valor=valor)
+
+        continua = deve_continuar()
+    }
+    imprime_lista_mercado(lista_mercado)
+}
+
+// cria_lista_mercado()
+
+
+
+</script>
+
+</html>

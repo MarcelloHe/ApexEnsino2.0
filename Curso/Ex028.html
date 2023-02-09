@@ -1,0 +1,67 @@
+<!-- Crie uma calculadora, que realize as 4 operações -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    function adicao() {
+        let num1 = parseFloat(prompt("Digite o primeiro numero: "))
+        let num2 = parseFloat(prompt("Digite o segundo numero: "))
+        somar = num1 + num2
+
+        document.write("O resultado é " + somar)
+    }
+    function subtracao() {
+        let num1 = parseFloat(prompt("Digite o primeiro numero: "))
+        let num2 = parseFloat(prompt("Digite o segundo numero: "))
+        subtrair = num1 - num2
+
+        document.write("O resultado é " + subtrair)
+    }
+    function divisao() {
+        let num1 = parseFloat(prompt("Digite o primeiro numero: "))
+        let num2 = parseFloat(prompt("Digite o segundo numero: "))
+        dividir = num1 / num2
+
+        document.write("O resultado é " + dividir)
+    }
+    function multiplicacao() {
+        let num1 = parseFloat(prompt("Digite o primeiro numero: "))
+        let num2 = parseFloat(prompt("Digite o segundo numero: "))
+        multiplica = num1 * num2
+
+        document.write("O resultado é " + multiplica)
+    }
+
+    let escolha = (prompt("Escolha uma opçao \n 1: para adiçao \n 2: para subtraçao \n 3: para dividir \n 4 para multiplicar "))
+
+    switch (escolha) {
+        case "1":
+            adicao()
+            break;
+        case "2":
+            subtracao()
+            break;
+        case "3":
+            divisao()
+            break;
+        case "4":
+            multiplicacao()
+            break;
+        default:
+            break;
+    }
+</script>
+
+</html>

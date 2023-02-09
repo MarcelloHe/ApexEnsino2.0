@@ -1,0 +1,37 @@
+<!-- Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. 
+Valide a entrada e permita repetir a operação. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    a = parseFloat(prompt("Digite a populaçao do pais A: "))
+    b = parseFloat(prompt("Digite a populaçao do pais B: "))
+    pa = parseFloat(prompt("Digite a taxa de crescimento do pais A: "))
+    pb = parseFloat(prompt("Digite a taxa de crescimento do pais B: "))
+    ano = 0
+
+    if (continuar == "S") {
+        while (a <= b) {
+            a += a * pa
+            b += b * pb
+            ano += 1
+
+
+        }
+        document.write("A ultrapassa ou iguala a B em " + ano + " anos ")
+    }
+    prompt("Deseja continuar?: S para sim e N para nao")
+</script>
+
+</html>
