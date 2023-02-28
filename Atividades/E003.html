@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    escolha = prompt("Escolha\n1 Pizza\n2 Pão de Queijo\n3 Macarrão\n")
+    if (escolha == "1" || escolha == "2" || escolha == "3") {
+        dinheiro = parseInt(prompt("O valor que vc vai dar: "))
+        switch (escolha) {
+
+            case "1":
+                if (dinheiro > 12) {
+                    troco = (dinheiro - 12.00)
+                    document.write("Seu troco é de R$" + troco + "<br>Obrigado volte sempre")
+                } else if (dinheiro == 12) {
+                    document.write("Obrigado volte sempre")
+                } else {
+                    valor = (12.00 - dinheiro)
+                    document.write("Esta faltando  R$" + valor)
+                }
+                break;
+
+            case "2":
+                if (dinheiro > 4) {
+                    troco = (dinheiro - 4.00)
+                    document.write("Seu troco é de R$" + troco + "<br>Obrigado volte sempre")
+                } else if (dinheiro == 4) {
+                    document.write("Obrigado volte sempre")
+                } else {
+                    valor = (4.00 - dinheiro)
+                    document.write("Esta faltando  R$" + valor)
+                }
+                break;
+
+            case "3":
+                if (dinheiro > 16) {
+                    troco = (dinheiro - 16.00)
+                    document.write("Seu troco é de R$" + troco + "<br>Obrigado volte sempre")
+                } else if (dinheiro == 16) {
+                    document.write("Obrigado volte sempre")
+                } else {
+                    valor = (16.00 - dinheiro)
+                    document.write("Esta faltando  R$" + valor)
+                }
+                break;
+
+
+            default:
+                document.write("Obrigado volte sempre ")
+                break;
+        }
+    } else {
+        document.write("Obrigado volte sempre ")
+    }
+
+</script>
+
+</html>

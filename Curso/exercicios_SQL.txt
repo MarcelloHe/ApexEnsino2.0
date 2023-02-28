@@ -1,0 +1,155 @@
+1) Página 25 da apostila;
+
+2) Criar o relacionamento entre tabelas
+
+    Cliente(nome, sobrenome)
+
+    Endereço(rua, numero, cidade, país, estado, cliente_id)
+
+    lista_de_desejos( produto_descricao, data, comprou, cliente_id)
+
+3) Criar duas tabelas: "funcionários" e "projetos".
+    - A tabela "funcionários" deve ter colunas para o nome, data de nascimento, cargo, salário e ID do projeto que está atualmente trabalhando.
+    - A tabela "projetos" deve ter colunas para o nome do projeto, descrição, data de início e data de término.
+
+Adicionar pelo menos 10 funcionários e 4 projetos.
+
+3.1) Escrever uma consulta que selecione todos os funcionários que estão trabalhando em um projeto específico.
+3.2) Escrever uma consulta que calcule a média salarial dos funcionários trabalhando em cada projeto.
+3.3) Escrever uma consulta que selecione todos os projetos que estão atualmente em andamento (a data de término é maior que a data atual).
+3.4) Escrever uma consulta para atualizar o salário de todos os funcionários que trabalham em um projeto específico.
+3.5) Escrever uma consulta para excluir todos os funcionários que trabalham em um projeto específico.
+
+Observação: As consultas devem ser escritas em SQL puro, sem auxílio de ferramentas de gerenciamento de banco de dados.
+
+4)Crie uma tabela chamada "Clientes" com as seguintes colunas:
+
+    ID (chave primária, inteiro, auto-incremento)
+    Nome (varchar (50))
+    Endereço (varchar (100))
+    Cidade (varchar (50))
+    Estado (varchar (50))
+    CEP (varchar (10))
+    Telefone (varchar (15))
+
+Inserir dados de exemplo na tabela "Clientes" ( ao menos 8 Clientes ).
+
+4.1) Crie uma consulta que retorne todos os clientes com o nome "João".
+
+4.2) Crie uma consulta que retorne todos os clientes com o estado "SC".
+
+4.3) Crie uma consulta que retorne todos os clientes com o CEP começando com "89".
+
+4.4) Atualize o endereço do cliente com ID = 1 para "Rua ABC, 123".
+
+4.5) Exclua o cliente com ID = 2.
+
+5)Crie uma tabela chamada "clientes" com as seguintes colunas:
+
+    id: int, chave primária, auto-incremento
+    nome: varchar(100)
+    endereco: varchar(200)
+    telefone: varchar(20)
+    email: varchar(100)
+    Inserir 5 registros na tabela "clientes"
+
+5.1)Selecione todos os registros da tabela "clientes" e ordene-os por nome em ordem alfabética
+
+5.2)Atualize o endereço do cliente com o id 3 para "Rua XYZ, 123"
+
+5.3)Exclua o registro do cliente com o id 4
+
+5.4)Selecione o nome e o telefone de todos os clientes que moram na "Rua XYZ, 123".
+
+5.5)Adicione uma coluna "data_cadastro" à tabela "clientes", com o tipo de data/hora e defina o valor padrão como a data atual.
+
+
+6) Crie uma tabela de clientes e uma tabela de vendas.
+
+    A tabela de clientes deve ter os seguintes campos:
+
+        ID do cliente (inteiro, auto-incremento, chave primária)
+        Nome do cliente (varchar)
+        Endereço (varchar)
+        Cidade (varchar)
+        Estado (varchar)
+        CEP (varchar)
+
+    A tabela de vendas deve ter os seguintes campos:
+
+        ID da venda (inteiro, auto-incremento, chave primária)
+        ID do cliente (inteiro)
+        Data da venda (data)
+        Valor da venda (dinheiro)
+
+O objetivo deste exercício é escrever uma consulta SQL que selecione o nome do cliente, o endereço, a cidade, o estado e o valor total de todas as vendas feitas por cada cliente.
+O resultado da consulta deve ser ordenado por valor total de vendas, do maior para o menor.
+
+7) Neste exercício, você deverá criar uma tabela no SQL Server e selecionar dados desta tabela.
+Aqui está o que você precisa fazer:
+
+    Crie uma nova base de dados chamada "meus_dados".
+
+    Crie uma nova tabela chamada "produtos" com as seguintes colunas:
+        id (chave primária, inteiro, auto-incremento)
+        nome (varchar, tamanho máximo de 50 caracteres)
+        descrição (varchar, tamanho máximo de 200 caracteres)
+        preço (float)
+        data_lancamento (data e hora)
+
+1) Inserir pelo menos 5 linhas de dados na tabela "produtos".
+2) Selecione todos os dados da tabela "produtos" e ordene-os por data_lancamento em ordem decrescente.
+3) Selecione apenas os nomes dos produtos com preço menor ou igual a 50.
+4) Selecione todos os dados da tabela "produtos" que tenham uma descrição que contenha a palavra "novo".
+
+Dica: Você pode usar a consulta SELECT para selecionar dados de uma tabela e a cláusula WHERE para filtrar os dados.
+Além disso, você pode usar a cláusula ORDER BY para ordenar os resultados.
+
+8) Exercício: Criar um banco de dados de filmes e atores
+
+Crie uma tabela chamada "Filmes" com os seguintes campos:
+
+    ID (int)
+    Nome (varchar)
+    Ano (int)
+    Diretor (varchar)
+    Nota (float)
+
+Crie uma tabela chamada "Atores" com os seguintes campos:
+
+    ID (int)
+    Nome (varchar)
+    Idade (int)
+    Nacionalidade (varchar)
+
+Inclua alguns dados nas tabelas "Filmes" e "Atores"
+
+1) Escreva uma consulta que selecione todos os atores que participaram de um filme com nota superior a 8.0.
+
+2) Escreva uma consulta que selecione todos os filmes com diretor "Quentin Tarantino" e classifique-os pela nota, do maior para o menor.
+
+Nota: Este exercício deve ser resolvido sem utilizar chaves primárias.
+
+
+9)Crie uma tabela chamada "Alunos" com as seguintes colunas:
+
+    ID (chave primária, inteiro, auto-incrementado)
+    Nome (varchar(100))
+    Data de Nascimento (data)
+    Endereço (varchar(200))
+    Telefone (varchar(15))
+
+    1) Inserir pelo menos 5 alunos na tabela Alunos com informações fictícias.
+
+    2) Selecione todos os alunos da tabela Alunos e mostre as informações em ordem alfabética pelo nome.
+
+    3) Selecione o aluno com ID = 3 e mostre apenas seu nome e endereço.
+
+    4) Atualize o endereço do aluno com ID = 2 para "Rua Nova, 123".
+
+    5) Exclua o aluno com ID = 4 da tabela Alunos.
+
+Verifique se o aluno com ID = 4 realmente foi excluído selecionando todos os alunos da tabela Alunos novamente.
+
+**** Esses são alguns exemplos de tarefas que um programador SQL nível junior deve ser capaz de realizar.
+A complexidade do exercício pode ser aumentada ou diminuída conforme a avaliação necessária ****

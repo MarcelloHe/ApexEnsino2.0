@@ -1,0 +1,69 @@
+1) Dado duas tabelas: "Clientes" e "Compras", onde a tabela "Compras" tem uma chave estrangeira que se relaciona com a tabela "Clientes",
+escreva uma consulta SQL para selecionar o nome dos clientes e o valor total de suas compras.
+
+2) Dado duas tabelas: "Produtos" e "Compras", onde a tabela "Compras" tem uma chave estrangeira que se relaciona com a tabela "Produtos",
+escreva uma consulta SQL para selecionar o nome dos produtos mais vendidos e a quantidade vendida de cada um.
+
+3) Dado três tabelas: "Clientes", "Compras" e "Produtos", onde a tabela "Compras" tem duas chaves estrangeiras, uma para a tabela "Clientes" 
+e outra para a tabela "Produtos",
+escreva uma consulta SQL para selecionar o nome do cliente, nome do produto e a quantidade produto para cada compra.
+
+4)Dado três tabelas: "Fornecedores", "Produtos" e "Compras", onde a tabela "Produtos" tem uma chave estrangeira para a tabela "Fornecedores" e a tabela "Compras" tem uma chave estrangeira para a tabela "Produtos",
+escreva uma consulta SQL para selecionar o nome do fornecedor, nome do produto e o valor total gasto em compras de cada produto.
+
+--> Desafio <--
+5) Exercício: Gerenciamento de Voos
+
+Crie uma base de dados para gerenciar voos em um aeroporto.
+A base de dados deve incluir informações sobre aviões, voos, passageiros e itinerários.
+
+    Crie uma tabela chamada "Aviões" com os seguintes campos:
+
+        ID (PK, int, not null)
+        Nome (varchar(50), not null)
+        Capacidade (int, not null)
+        Companhia Aérea (varchar(50), not null)
+
+    Crie uma tabela chamada "Voos" com os seguintes campos:
+
+        ID (PK, int, not null)
+        ID do Avião (FK, int, not null)
+        Data (date, not null)
+        Hora de Partida (time, not null)
+        Hora de Chegada (time, not null)
+        Destino (varchar(50), not null
+
+    Crie uma tabela chamada "Passageiros" com os seguintes campos:
+
+        ID (PK, int, not null)
+        Nome (varchar(50), not null)
+        Sobrenome (varchar(50), not null)
+        Data de Nascimento (date, not null)
+        Número de Passaporte (varchar(50), not null)
+
+    Crie uma tabela chamada "Itinerários" com os seguintes campos:
+
+        ID do Voo (FK, int, not null)
+        ID do Passageiro (FK, int, not null)
+
+Escreva uma consulta que retorne a seguinte informação:
+
+1) Nome completo de todos os passageiros com mais de 25 anos que estão programados para voos nos próximos 3 dias.
+
+*** O candidato deve criar as tabelas, inserir dados fictícios e escrever a consulta para resolver esse exercício.
+
+6) Crie duas tabelas: uma chamada 'Clientes' e outra chamada 'Compras':
+
+    A tabela 'Clientes' deve conter informações sobre os clientes, como nome, endereço e telefone.
+    A tabela 'Compras' deve conter informações sobre as compras feitas pelos clientes, incluindo o ID do cliente, a data da compra e o valor da compra. Utilize uma chave primária na tabela 'Clientes' e uma chave estrangeira na tabela 'Compras' que corresponda ao ID do cliente.
+
+1) Escreva uma consulta que junte as duas tabelas utilizando um INNER JOIN e retorne as informações dos clientes e as informações sobre suas compras.
+
+2) Escreva uma consulta que junte as duas tabelas utilizando um LEFT JOIN e retorne as informações dos clientes, mesmo que eles não tenham feito compras, e as informações sobre suas compras, se houver.
+
+3) Escreva uma consulta que junte as duas tabelas utilizando um RIGHT JOIN e retorne as informações sobre as compras, mesmo que não haja clientes correspondidos, e as informações dos clientes, se houver.
+
+4) Escreva uma consulta que junte as duas tabelas utilizando um FULL OUTER JOIN e retorne as informações sobre os clientes, mesmo que eles não tenham feito compras, e as informações sobre as compras, mesmo que não haja clientes correspondidos.
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    temperatura = parseFloat(prompt("Digite a temperatura: "))
+    escolha = prompt("Escolha:\n1: De Celsius para Fahrenheit:\n2 Fahrenheit para Celsius ")
+
+    switch (escolha) {
+        case "1":
+            c_f = (temperatura * 1.8) + 32
+            document.write("De Celsius para Fahrenheit: " + temperatura + "°C para " + c_f + "°F")
+            break;
+
+        case "2":
+            f_c = (temperatura - 32) * .5556
+            document.write("De Fahrenheit para Celsius: " + temperatura + "°F para " + f_c + "°C")
+            break;
+
+        default:
+
+            break;
+    }
+
+</script>
+
+</html>
